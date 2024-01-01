@@ -1,7 +1,22 @@
+.cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: fit-content;
+  border: 1px solid black;
+}
+
 .cnt-grid {
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  
-  border: 1px solid black;
+}
+
+.cnt-grid:first-of-type {
+  border-bottom: 1px solid black;
+}
+
+.grid-label {
+  text-align: center;
 }
